@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Container Styling */
+.about-container {
+  background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  top: -20px;
+
+}
+
+
+.about-content {
+  display: flex;
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  width: 90%; 
+  max-width: 1200px;
+  background: transparent; 
+}
+
+.content-box {
+  background: linear-gradient(90deg, rgba(0, 123, 255, 0.8), rgba(0, 193, 170, 0.8));
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  width: 400px; 
+  flex: 0 0 auto; 
+  animation: slideUp 1s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+  transform: scale(1.05); 
+}
+
+/* Text Styling */
+.about-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: hsl(0, 29%, 97%);
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(248, 244, 244);
+  margin-bottom: 15px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+.slide-in.delay {
+  animation-delay: 0.5s; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  color: #2c3e50;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.top-heading {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(224, 232, 232); 
+  margin-left: 15px;
+  font-family: 'Kaushan Script';
+  font-size: 90px;
+  font-weight: bold;
+  position: relative;
+  top: 150px;
+}

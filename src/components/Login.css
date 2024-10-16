@@ -1,0 +1,111 @@
+/* Login Component Base Styles */
+.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085'); /* Background image */
+    background-size: cover;
+    background-position: center; /* Centers the image */
+}
+  
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+  }
+  
+  /* Form and Input Styling */
+  .form-control {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  /* Custom Input Classes */
+  .input-email {
+    background-color: #f3f8ff; /* Light blue background */
+  }
+  
+  .input-password {
+    background-color: #fffbf2; /* Light yellow background */
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    border: none;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #0091cc);
+  }
+  
+  /* Toggle Link Styles */
+  .btn-link {
+    color: #007bff;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Text Center */
+  .text-center {
+    font-weight: bold;
+  }
+  
+  /* Box Shadow for Card */
+  .card.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .login-body {
+      height: auto;
+      top: 0; /* Adjust for mobile view */
+    }
+  
+    .card-body {
+      padding: 20px;
+    }
+  }
+  
+/* Login.css */
+
+.logout-animation {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px); /* Optional: Move up slightly */
+  }
+}

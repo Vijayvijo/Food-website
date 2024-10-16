@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    
+  }
+  
+  .homepage {
+    background-color: #f9f9f9; 
+    position: relative;
+    top: -200pxpx;
+  }
+  
+  .header {
+    background: linear-gradient(90deg, rgba(0, 123, 255, 0.8), rgba(0, 193, 170, 0.8));
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10px;
+  
+  }
+  
+ 
+  .feature-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #4a4949;
+  }
+  
+
+  .header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+ 
+
+
+
+.feature-card {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.3s; 
+}
+
+.feature-card:hover img {
+    transform: scale(1.1); 
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+h1.display-4 {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #dce2e7; 
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+h1.display-4:hover {
+  color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+
+.card-title {
+  width: 85%;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: deepskyblue;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.card-title:hover {
+  transform: scale(1.1); 
+  color: rgb(11, 11, 11);          
+}

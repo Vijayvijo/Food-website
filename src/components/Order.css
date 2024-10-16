@@ -1,0 +1,170 @@
+/******ORDER NOW*******/
+
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url("https://www.cthawards.com/wp-content/uploads/2019/10/you-can-now-be-sued-for-writing-a-negative-restaurant-review-cover-img.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+    margin-top: -20px;
+   
+}
+
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b0b0b;
+    font-family: 'Lobster Two', cursive;
+    font-size: 80px;
+    
+    transform: translateY(-20px); 
+    animation: fadeIn 1s ease-in; 
+}
+
+.order h1 span {
+    color: rgb(14, 15, 15); 
+    margin-right: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 15px;
+    animation: grow 0.5s ease-in-out; 
+}
+
+.order .order_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: slideIn 1s ease-in-out;
+}
+
+.order .order_main .order_image img {
+    width: 500px;
+    position: relative;
+    top: 130px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #a59e9e;
+    transition: transform 0.3s ease; 
+}
+
+.order .order_main .order_image:hover img {
+    transform: scale(1.1);
+}
+
+.order .order_main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+    position: relative;
+    top: 100px;
+}
+
+.order .order_main form .mb-3 {
+    margin: 7px;
+}
+
+.order .order_main form .form-label {
+    line-height: 25px;
+    color: rgb(65, 184, 227); 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order .order_main form .form-control {
+    width: 100%; 
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid rgb(204, 204, 204);
+    background: rgb(238, 238, 238);
+    outline: none;
+    transition: border 0.3s; 
+}
+
+.order .order_main form .form-control:hover {
+    border: 2px solid rgb(62, 180, 230); 
+}
+
+.order .order_main form #submit {
+    width: 180px;
+    padding: 9px 25px;
+    border: 2px solid rgb(225, 225, 232);
+    background-color: transparent;
+    color: rgb(204, 210, 210); 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.order .order_main form #submit:hover {
+    background-color: rgb(53, 203, 208); 
+    color: white;
+}
+
+.order .order_main form .order_btn {
+    position: relative;
+    width: 150px;
+    padding: 9px 25px;
+    text-align: center;
+    border: 2px solid blue; 
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.order .order_main form .order_btn a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.order-title {
+    position: relative;
+    top:110px;
+    text-align: center;
+    color: rgb(13, 14, 14); 
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+}
