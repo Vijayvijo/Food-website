@@ -48,7 +48,7 @@
   width: 95%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   grid-gap: 15px;
 }
 
@@ -57,9 +57,9 @@
   height: 550px;
   padding-top: 10px;
   margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.9); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
-  position: relative; /* For positioning heart icon */
+  position: relative; 
   transition: transform 0.3s ease; 
 }
 
@@ -89,7 +89,7 @@
 .menu .menu_box .menu_card .small_card {
   width: 45px;
   height: 45px;
-  position: absolute; /* Use absolute for positioning */
+  position: absolute; 
   top: 10px;
   right: 10px;
   opacity: 0;
@@ -139,7 +139,7 @@
 }
 
 .menu .menu_box .menu_card .menu_info .menu_icon {
-  color: deepskyblue; /* Change to blue color */
+  color: deepskyblue; 
   text-align: center;
   margin: 10px 0;
 }
@@ -163,7 +163,7 @@
   background-color: deepskyblue; 
 }
 
-/* Rating and Stars */
+
 .rating {
   display: flex;
   justify-content: center;

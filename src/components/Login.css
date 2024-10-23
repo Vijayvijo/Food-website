@@ -1,4 +1,4 @@
-/* Login Component Base Styles */
+
 .login-body {
     display: flex;
     align-items: center;
@@ -7,9 +7,9 @@
     top: 100px;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085'); /* Background image */
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085'); 
     background-size: cover;
-    background-position: center; /* Centers the image */
+    background-position: center; 
 }
   
   .container {
@@ -24,11 +24,11 @@
   
   .card-body {
     padding: 30px;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.9); 
     border-radius: 10px;
   }
   
-  /* Form and Input Styling */
+
   .form-control {
     border-radius: 20px;
     padding: 10px 15px;
@@ -41,16 +41,16 @@
     box-shadow: none;
   }
   
-  /* Custom Input Classes */
+ 
   .input-email {
-    background-color: #f3f8ff; /* Light blue background */
+    background-color: #f3f8ff;
   }
   
   .input-password {
-    background-color: #fffbf2; /* Light yellow background */
+    background-color: #fffbf2;
   }
   
-  /* Button Styles */
+
   .btn-primary {
     background: linear-gradient(45deg, #007bff, #00c6ff);
     border: none;
@@ -62,7 +62,7 @@
     background: linear-gradient(45deg, #0056b3, #0091cc);
   }
   
-  /* Toggle Link Styles */
+
   .btn-link {
     color: #007bff;
   }
@@ -72,21 +72,21 @@
     color: #0056b3;
   }
   
-  /* Text Center */
+ 
   .text-center {
     font-weight: bold;
   }
   
-  /* Box Shadow for Card */
+ 
   .card.shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Responsive Styles */
+  
   @media (max-width: 768px) {
     .login-body {
       height: auto;
-      top: 0; /* Adjust for mobile view */
+      top: 0; 
     }
   
     .card-body {
@@ -94,7 +94,7 @@
     }
   }
   
-/* Login.css */
+
 
 .logout-animation {
   animation: fadeOut 0.5s forwards;
@@ -106,6 +106,6 @@
   }
   to {
     opacity: 0;
-    transform: translateY(-20px); /* Optional: Move up slightly */
+    transform: translateY(-20px); 
   }
 }

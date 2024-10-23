@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cookie&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+   
 }
 body{
-    /* background: url("") no-repeat; */
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-   
 }
 
 html{
@@ -66,14 +67,7 @@ html{
     transition: 0.1s;
 }
 
- /* section nav ul li a::after{ */
-    /* content: '';
-    width: 0;
-    height: 2px;
-    background: #ffb600;
-    display: block;
-    transition: 0.2s linear; */
-/* } */
+
 
 #Home nav ul li a:hover::after{
     width: 100%;
@@ -137,14 +131,14 @@ html{
     align-items: center; 
   }
   
-  /* Icon styles */
+
   .icons svg {
     font-size: 1.5rem; 
     color: rgb(51, 51, 51); 
     transition: color 0.3s; 
   }
   
-  /* Hover effect for icons */
+
   .icons svg:hover {
     color: rgb(35, 35, 35); 
     }
@@ -183,7 +177,7 @@ html{
     border-radius: 4px;
     font-size: 16px;
     background-color: rgb(255, 255, 255);
-    background-image: url("C:\Users\karth\OneDrive\Desktop\food\food-ecom\public\image\logosearch.png");
+    background-image: url("C:\Users\karth\OneDrive\Desktop\Myproject FE\website1\food-website\public\image\logosearch.png");
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
@@ -228,43 +222,40 @@ html{
   transition: transform 0.5s ease-in-out;
 }
 
-/* Navbar.css */
 
-/* Default Light Mode Styles */
 .navbar-light {
-  background-color: #f8f9fa; /* Light background */
-  color: #000; /* Dark text color */
+  background-color: #f8f9fa; 
+  color: #000;
 }
 
 .navbar-light .nav-link {
-  color: #000; /* Dark link color */
+  color: #000; 
 }
 
 .navbar-light .nav-link:hover {
-  color: #0056b3; /* Darker hover color */
+  color: #0056b3;
 }
 
-/* Dark Mode Styles */
+
 .navbar-dark {
-  background-color: #343a40; /* Dark background */
-  color: #fff; /* Light text color */
+  background-color: #343a40; 
+  color: #fff; 
 }
 
 .navbar-dark .nav-link {
-  color: #fff; /* Light link color */
+  color: #fff; 
 }
 
 .navbar-dark .nav-link:hover {
-  color: #cfd2d6; /* Lighter hover color */
+  color: #cfd2d6;
 }
 
-/* Additional styles for the search input and buttons if needed */
 input.form-control {
-  background-color: #fff; /* White input background in light mode */
-  color: #000; /* Dark text color in light mode */
+  background-color: #fff; 
+  color: #000; 
 }
 
 .navbar-dark input.form-control {
-  background-color: #495057; /* Dark input background in dark mode */
-  color: #fff; /* Light text color in dark mode */
+  background-color: #495057; 
+  color: #fff;
 }

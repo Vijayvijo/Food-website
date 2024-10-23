@@ -3,7 +3,7 @@ import { FaGoogle } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css';
 
-// AuthContext to manage authentication state
+
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -45,7 +45,7 @@ const Login = () => {
       setError('Please fill in all fields');
       return;
     }
-    login(); // Call login function from context
+    login(); 
     alert('Login successful!');
     setEmail('');
     setPassword('');

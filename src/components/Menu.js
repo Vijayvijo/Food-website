@@ -154,7 +154,7 @@ const Menu = () => {
       price: "450.00",
     },
   
-    // Add other menu items here...
+  
   ];
 
   return (
@@ -200,7 +200,7 @@ const MenuCard = ({ imgSrc, title, description, price, onAddToCart, onAddToWishl
   };
 
   const handleRemoveFromCart = () => {
-    // Implement the logic for removing the item from the cart
+   
     setIsInCart(false);
     alert(`${title} has been removed from your cart.`);
   };
@@ -224,12 +224,7 @@ const MenuCard = ({ imgSrc, title, description, price, onAddToCart, onAddToWishl
         <h3>
           <FontAwesomeIcon icon={faIndianRupeeSign} /> {price}
         </h3>
-        <div className="rating">
-          {[...Array(5)].map((_, index) => (
-            <FontAwesomeIcon
-              key={index}
-              icon={faStar}
-              className={`star ${index < rating ? 'checked' : ''}`}
+        <div className="rating">{[...Array(5)].map((_, index) => (<FontAwesomeIcon key={index} icon={faStar} className={`star ${index < rating ? 'checked' : ''}`}
               onClick={() => handleRatingClick(index)}
             />
           ))}

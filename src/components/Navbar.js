@@ -30,8 +30,8 @@ const Navbar = () => {
         position: 'fixed',
         width: '100%',
         zIndex: '1000',
-        backgroundColor: darkMode ? '#343a40' : '#f8f9fa', // Set colors directly
-        color: darkMode ? '#fff' : '#000' // Set text color directly
+        backgroundColor: darkMode ? '#343a40' : '#f8f9fa',
+        color: darkMode ? '#fff' : '#000',
       }}
     >
       <div className="container-fluid">
