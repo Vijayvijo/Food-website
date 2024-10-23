@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useCart } from './CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
-import './Cart.css';  // Ensure this path is correct
+import './Cart.css'; 
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useCart();
