@@ -10,7 +10,7 @@ import Menu from './components/Menu';
 import Review from './components/Review';
 import Cart from './components/Cart';
 import Wishlist from './components/WishList';
-import Order from './components/Order'; // Import Order component
+import Order from './components/Order'; 
 import Footer from './components/Footer';
 import Login from './components/Login';
 
