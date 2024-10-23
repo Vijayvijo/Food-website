@@ -1,7 +1,7 @@
 import React from 'react';
-import './Gallery.css'; // Import custom CSS
-import { useCart } from './CartContext'; // Import the CartContext
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Gallery.css';
+import { useCart } from './CartContext'; 
+import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
   const { addToCart } = useCart(); // Destructure addToCart from the CartContext
