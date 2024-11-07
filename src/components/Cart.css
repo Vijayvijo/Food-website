@@ -132,3 +132,75 @@ li h3 {
     margin: 5px 0; /* Adjust spacing on smaller screens */
   }
 }
+.order-confirmation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.order-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.order-item .item-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.order-item .item-details h2 {
+  margin: 0;
+}
+
+.buy-section {
+  margin-top: 20px;
+}
+
+.buy-button {
+  padding: 12px 25px;
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.buy-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+/* General styles for the alert */
+.order-alert {
+  background-color: #4CAF50; /* Green background for success */
+  color: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  animation: fadeIn 1s ease-out; /* Add fade-in animation */
+}
+
+/* Fade-in animation for the alert */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Optionally add a close button */
+.alert-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
