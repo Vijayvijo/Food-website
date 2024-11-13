@@ -31,14 +31,10 @@ const Footer = () => {
                     <h2>Food Services</h2>
                     <p>Place Orders</p>
                     <p>Fast Delivery & Takeout</p>
-                    <p>Secure Payment Options</p>
-                    <p>Order Tracking</p>
                     <p>Customer Reviews</p>
-                    <p>Exclusive Promotions</p>
                     <p>24/7 Customer Support</p>
-                    <p>Diverse Cuisine Selection</p>
-                    <p>Special Dietary Options</p>
-                    <p>Pre-Schedule Your Orders</p>
+                   
+                    
                 </div>
                 
                 <div className="footer_tag">
@@ -48,19 +44,13 @@ const Footer = () => {
                     <p>Menu</p>
                     <p>Gallery</p>
                     <p>Order</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
-                    <p>FAQs</p>
-                    <p>Careers</p>
+                   
                 </div>
                 
                 <div className="footer_tag">
                     <h2>Location</h2>
                     <p>India</p>
-                    <p>Italy</p>
-                    <p>USA</p>
-                    <p>Sri Lanka</p>
-                    <p>Japan</p>
+                   
                 </div>
 
                 <div className="footer_tag">
