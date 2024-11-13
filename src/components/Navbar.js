@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import icons from react-icons
 import { useTheme } from './ThemeContext'; // Import the custom hook
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -75,12 +74,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item me-4">
               <Link className="nav-link" to="/wishlist">
-                <FontAwesomeIcon icon={faHeart} /> Wishlist
+                <FaHeart /> Wishlist {/* Using React Icons */}
               </Link>
             </li>
             <li className="nav-item me-5">
               <Link className="nav-link" to="/cart">
-                <FontAwesomeIcon icon={faShoppingCart} /> Cart
+                <FaShoppingCart /> Cart {/* Using React Icons */}
               </Link>
             </li>
           </ul>

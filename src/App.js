@@ -1,9 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContext';
-
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useCart } from './CartContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { FaRupeeSign } from 'react-icons/fa'; // Import Rupee sign from react-icons
 import './wishlist.css';  // Ensure this path is correct
 
 const Wishlist = () => {
@@ -20,7 +19,7 @@ const Wishlist = () => {
               <h2>{item.title}</h2>
               <p>{item.description}</p>
               <h3>
-                <FontAwesomeIcon icon={faIndianRupeeSign} /> {item.price}
+                <FaRupeeSign /> {item.price} {/* Using FaRupeeSign from react-icons */}
               </h3>
               <button onClick={() => removeFromWishlist(item)}>Remove from Wishlist</button>
             </li>

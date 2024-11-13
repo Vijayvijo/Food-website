@@ -1,13 +1,13 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faStar, faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-import { useCart } from './CartContext';
+import { useNavigate } from 'react-router-dom'; 
+import { useCart } from './CartContext'; // Assuming CartContext is set up to manage cart items
+import { FaHeart, FaStar, FaRupeeSign } from 'react-icons/fa';  // Import React Icons
 import './Menu.css';
 
 const Menu = () => {
-  const { addToCart, addToWishlist } = useCart();
+  const { addToCart, addToWishlist } = useCart();  // Extracting methods from CartContext
 
+  // Sample menu items (you can dynamically fetch them from an API or backend)
   const menuItems = [
     {
       imgSrc: "https://gobargingwp-s3.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/08/10-Famous-Italian-Dishes-You-Must-Try-Lasagne-alla-Bolognese.jpg",
@@ -154,7 +154,7 @@ const Menu = () => {
       price: "450.00",
     },
   
-  
+    // Add more items as needed
   ];
 
   return (
@@ -200,7 +200,6 @@ const MenuCard = ({ imgSrc, title, description, price, onAddToCart, onAddToWishl
   };
 
   const handleRemoveFromCart = () => {
-   
     setIsInCart(false);
     alert(`${title} has been removed from your cart.`);
   };
@@ -211,8 +210,7 @@ const MenuCard = ({ imgSrc, title, description, price, onAddToCart, onAddToWishl
         <img src={imgSrc} alt={title} />
       </div>
       <div className="small_card">
-        <FontAwesomeIcon
-          icon={faHeart}
+        <FaHeart
           className="heart-icon"
           onClick={handleHeartClick}
           style={{ color: isClicked ? 'red' : 'gray' }}
@@ -222,23 +220,25 @@ const MenuCard = ({ imgSrc, title, description, price, onAddToCart, onAddToWishl
         <h2>{title}</h2>
         <p>{description}</p>
         <h3>
-          <FontAwesomeIcon icon={faIndianRupeeSign} /> {price}
+          <FaRupeeSign /> {price}
         </h3>
-        <div className="rating">{[...Array(5)].map((_, index) => (<FontAwesomeIcon key={index} icon={faStar} className={`star ${index < rating ? 'checked' : ''}`}
+        <div className="rating">
+          {[...Array(5)].map((_, index) => (
+            <FaStar
+              key={index}
+              className={`star ${index < rating ? 'checked' : ''}`}
               onClick={() => handleRatingClick(index)}
             />
           ))}
-          <p className={`rating-text ${rating > 0 ? 'updated' : ''}`}>Your rating: {rating}</p>
         </div>
-        {isInCart ? (
-          <button onClick={handleRemoveFromCart} className="menu_btn">
-            Remove from Cart
+        <div className="buttons">
+          <button
+            onClick={isInCart ? handleRemoveFromCart : handleAddToCart}
+            className="add-to-cart-btn"
+          >
+            {isInCart ? 'Remove from Cart' : 'Add to Cart'}
           </button>
-        ) : (
-          <button onClick={handleAddToCart} className="menu_btn">
-            Add To Cart
-          </button>
-        )}
+        </div>
       </div>
     </div>
   );

@@ -118,13 +118,13 @@
   margin: 10px auto;
   font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: deepskyblue; 
+  color: rgb(11, 11, 11); 
   cursor: pointer;
   transition: 0.2s;
 }
 
 .menu .menu_box .menu_card .menu_info h2:hover {
-  color: rgb(0, 0, 0);
+  color:rgb(11, 157, 157); 
 }
 
 .menu .menu_box .menu_card .menu_info p {
@@ -204,3 +204,93 @@
   transform: scale(1.1); 
 }
 
+/* Menu.css */
+.menu {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu_box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu_card {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu_card:hover {
+  transform: translateY(-5px);
+}
+
+.menu_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heart-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu_info {
+  padding: 10px 0;
+}
+
+.menu_info h2 {
+  font-size: 1.5em;
+}
+
+.menu_info p {
+  font-size: 1em;
+  color: #555;
+}
+
+.menu_info h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -50px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.checked {
+  color: gold;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  padding: 10px;
+  background-color: #050505;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color:rgb(11, 157, 157); 
+}
