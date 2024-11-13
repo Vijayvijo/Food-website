@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaSmile } from 'react-icons/fa';
 import './Footer.css'; 
 
 const Footer = () => {
@@ -74,17 +73,16 @@ const Footer = () => {
                 <div className="footer_tag">
                     <h2>Stay Connected</h2>
                     <div className="social-icons">
-                        <FontAwesomeIcon icon={faFacebook} aria-label="Facebook" />
-                        <FontAwesomeIcon icon={faInstagram} aria-label="Instagram" />
-                        <FontAwesomeIcon icon={faTwitter} aria-label="Twitter" />
-                        <FontAwesomeIcon icon={faLinkedin} aria-label="LinkedIn" />
+                        <FaFacebook aria-label="Facebook" />
+                        <FaInstagram aria-label="Instagram" />
+                        <FaTwitter aria-label="Twitter" />
+                        <FaLinkedin aria-label="LinkedIn" />
                     </div>
                 </div>
 
                 <div className="footer_tag">
-                <h2>SavoryDelightsHub</h2>
+                    <h2>SavoryDelightsHub</h2>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrLHjl7OnoCZ_2EM8wIr7HNcLygjZbLV7oA&s" alt="Logo" />
-
                 </div>
 
                 {/* Subscriber Section with updated class */}
@@ -103,7 +101,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="me">
-                © Designed by <span><i className="fa-solid fa-face-grin"></i> Karthik</span> | All rights reserved.
+                © Designed by <span><FaSmile /> Karthik</span> | All rights reserved.
             </p>
         </footer>
     );
