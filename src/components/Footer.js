@@ -33,7 +33,7 @@ const Footer = () => {
                     <p>Fast Delivery & Takeout</p>
                     <p>Customer Reviews</p>
                     <p>24/7 Customer Support</p>
-                   
+                    
                     
                 </div>
                 
