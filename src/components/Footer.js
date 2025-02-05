@@ -5,8 +5,8 @@ import './Footer.css';
 const Footer = () => {
     const [email, setEmail] = useState('');
     const contacts = [
-        { id: 1, text: '+91 6382722629' },
-        { id: 2, text: 'Karthikkarthikstark@gmail.com' },
+        { id: 1, text: '+91 6238095015' },
+        { id: 2, text: 'vijaycj003@gmail.com' },
         { id: 3, text: '' }
     ];
 
